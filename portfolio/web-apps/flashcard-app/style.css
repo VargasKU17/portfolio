@@ -1,0 +1,175 @@
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    background: #512888; 
+    text-align: center;
+}
+h1{
+    color: #d0d5db;
+    font-family: fantasy;
+}
+p{
+    color: #d0d5db;
+}
+.flashcard{
+    display: grid;
+    height: 300px;
+    width: 400px; 
+    background: white; 
+    visibility: visible;
+    grid-template-columns: 5em 2fr 2fr 5em;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      ". . . . "
+      " correct begin begin tally"
+      " wrong five ten . "
+      " side-a twentyfive fifty . "
+      " side-b-two all-words all-words side-b-one  "
+      " . . . . ";
+      grid-gap: .25em;
+  }
+/* .flashcard{
+    background: white; 
+    display: grid;
+    max-height: 100%;
+    visibility: visible;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      ". . . . . ."
+      ". correct begin begin tally ."
+      ". wrong five ten . ."
+      ". side-a twentyfive fifty . ."
+      ". . all all side-b-one side-b-two "
+      ". . . . . .";
+      grid-gap: .25em;
+  } */
+  .begin{
+    background-color: #D1D43E;
+    grid-area: begin;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .five{
+    background-color: #444;
+    grid-area: five;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .five:hover{
+    opacity: .5;
+  }
+  .ten{
+    background-color: #444;
+    grid-area: ten;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .ten:hover{
+    opacity: .5;
+  }
+  .twentyfive{
+    background-color: #444;
+    grid-area: twentyfive;
+  
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .twentyfive:hover{
+    opacity: .5;
+  }
+  .fifty{
+    background-color: #444;
+    grid-area: fifty;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .fifty:hover{
+    opacity: .5;
+  }
+  .all-words{
+    background-color: #7a6f6f;
+    grid-area: all-words;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+  }
+  .all:hover{
+    opacity: .5;
+  }
+  
+  /*once the test has started*/
+  .tally{
+    grid-area: tally;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+    visibility: hidden;
+  }
+  
+  .side-a{
+    grid-area: side-a;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: #444;
+    visibility: hidden;
+  }
+  
+  .answer{
+    visibility: hidden;
+  }
+  .correct{
+    grid-area: correct;
+    font-size: 1em; 
+    /* visibility: hidden; */
+    background-color: #4DD7AF;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
+  }
+  
+  .wrong{
+    grid-area: wrong;
+    font-size: 1em;
+    /* visibility: hidden; */
+    background-color: #D74D75;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .side-b-one{
+    grid-area: side-b-one;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .side-b-two{
+    font-size: 11px; 
+    grid-area: side-b-two;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+
+
+

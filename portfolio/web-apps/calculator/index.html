@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator-wrap">
+        <div class="calculator">
+            <div class="one button-key">1</div>
+            <div class="two button-key">2</div>
+            <div class="three button-key">3</div>
+            <div class="four button-key">4</div>
+            <div class="five button-key">5</div>
+            <div class="six button-key">6</div>
+            <div class="seven button-key">7</div>
+            <div class="eight button-key">8</div>
+            <div class="nine button-key">9</div>
+            <div class="number-zero button-key">0</div>
+            <div class="add-num button-key">+</div>
+            <div class="subtract-num button-key">-</div>
+            <div class="multiply-num button-key">X</div>
+            <div class="divide-num button-key">/</div>
+            <div class="display-screen"></div>
+            <div class="equals button-key">=</div>
+            <div class="all-clear button-key">AC</div>
+        </div>
+    </div>
+    
+</body>
+<style>
+body{
+    margin: 0; 
+    font-size: 30px; 
+}
+
+.calculator-wrap{
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button-key:hover{ 
+    background-color:  #e4c8f3 ; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.calculator{
+    background-color:  grey; 
+    width: 400px; 
+    height: 450px; 
+    display: grid; 
+    grid-template-columns: "1fr 1fr 1fr 1fr"; 
+    grid-template-rows: "1fr 1fr 1fr 1fr 1fr";
+    grid-template-areas: 
+            "display-screen display-screen display-screen display-screen"
+            "one two three add-num"
+            "four five six subtract-num"
+            "seven eight nine multiply-num"
+            "all-clear number-zero equals divide-num" ; 
+            grid-gap: .25em; 
+}
+
+.display-screen{
+    grid-area: display-screen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #c8f3e2 ;
+}
+
+.one{
+    grid-area: one;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:   #68c3e8 ;  
+}
+
+
+.two{
+    grid-area: two;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.three{
+    grid-area: three;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+    
+}
+
+
+.four{
+    grid-area: four;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.five{
+    grid-area: five;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.six{
+    grid-area: six;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.seven{
+    grid-area: seven;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.eight{
+    grid-area: eight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.nine{
+    grid-area: nine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.number-zero{
+    grid-area: number-zero;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68c3e8 ; 
+}
+
+.add-num{
+    grid-area: add-num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f;
+}
+
+.subtract-num{
+    grid-area: subtract-num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f; 
+}
+
+
+.multiply-num{
+    grid-area: multiply-num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f;
+}
+
+.divide-num{
+    grid-area: divide-num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f;
+}
+
+.equals{
+    grid-area: equals; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f;
+}
+
+.all-clear{
+    font-size: 20px; 
+    grid-area: all-clear;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff59f;
+}
+
+</style>
+</html>
+<script src="main.js"></script>
+
+
+
